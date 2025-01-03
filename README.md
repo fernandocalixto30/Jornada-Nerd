@@ -4,7 +4,7 @@
 
 ---
 ## 🎮 Visualizar o Deploy
-[**Clique aqui para visualizar o deploy do projeto no Vercel**](https://link-do-deploy-no-vercel)
+[**Clique aqui para visualizar o deploy do projeto no Vercel**](https://jornada-nerd-8ocw.vercel.app/)
 
 ---
 ## 📖 Sobre o Projeto  
