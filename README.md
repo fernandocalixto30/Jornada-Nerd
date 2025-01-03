@@ -3,7 +3,10 @@
 **Bem-vindo ao Jornada Nerd**, uma plataforma para nerds, geeks e entusiastas da tecnologia e cultura pop! Nosso objetivo é conectar pessoas que compartilham paixões por games, mangás, computadores e muito mais. Com serviços exclusivos de **aluguel de jogos e mangás** e **venda de peças para computadores**, você encontrará tudo o que precisa para mergulhar no universo nerd/geek em um só lugar!  
 
 ---
+## 🎮 Visualizar o Deploy
+[**Clique aqui para visualizar o deploy do projeto no Vercel**](https://link-do-deploy-no-vercel)
 
+---
 ## 📖 Sobre o Projeto  
 
 O Jornada Nerd é mais que uma plataforma – é uma experiência completa para quem vive a cultura geek! Aqui você pode:  
@@ -41,3 +44,4 @@ Com uma interface intuitiva e recursos pensados para a comunidade geek, o Jornad
 1. Clone este repositório:  
    ```bash
    git clone https://github.com/seu-usuario/jornada-nerd.git
+
