@@ -1,6 +1,6 @@
 import './App.css';
 import Carosel from './components/carosel';
-import ShopCarousel from './components/ShopCarousel/';
+// import ShopCarousel from './components/ShopCarousel/';
 
 function App() {
   return (
@@ -31,8 +31,8 @@ function App() {
         <div className="item-shop-info-text">
           <h2>Shop</h2>
         </div>
-         <ShopCarousel />
-         <ShopCarousel />
+        {/* <ShopCarousel />
+        <ShopCarousel /> */}
       </section>
     </>
   );
