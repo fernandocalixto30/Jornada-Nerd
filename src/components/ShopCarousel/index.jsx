@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import ItemShop from "../ItemShop/";
-import "./style.css";
+import './style.css'
 
 const ShopCarousel = () => {
   const items = [
@@ -14,29 +14,24 @@ const ShopCarousel = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const next = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-  };
+  const next = () => setCurrentIndex((currentIndex + 1) % items.length);
+  const prev = () => setCurrentIndex((currentIndex - 1 + items.length) % items.length);
 
-  const prev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
-  };
-
-  const visibleItems = [...items, ...items].slice(currentIndex, currentIndex + 5);
+  const visibleItems = items.slice(currentIndex, currentIndex + 5);
 
   return (
     <div className="shop-carousel">
       <IoIosArrowBack className="arrow" onClick={prev} />
       <div className="items">
-        <div className="carousel-content" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-          {visibleItems.map((item, index) => (
-            <ItemShop key={index} img={item.img} nomeProduto={item.nome} valorProduto={item.valor} />
-          ))}
-        </div>
+        {visibleItems.map((item,index) => (
+          <ItemShop  key={index} img={item.img} nomeProduto={item.nome} valorProduto={item.valor} />
+          
+        ))}
       </div>
+      
       <IoIosArrowForward className="arrow" onClick={next} />
     </div>
   );
 };
 
-export default ShopCarousel;
+export default ShopCarousel; 

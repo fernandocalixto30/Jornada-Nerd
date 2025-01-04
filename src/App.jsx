@@ -31,8 +31,8 @@ function App() {
         <div className="item-shop-info-text">
           <h2>Shop</h2>
         </div>
-        <ShopCarousel />
-        <ShopCarousel />
+         <ShopCarousel />
+         <ShopCarousel />
       </section>
     </>
   );
