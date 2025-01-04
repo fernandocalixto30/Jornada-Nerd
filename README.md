@@ -1,12 +1,3 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
 # Jornada Nerd 🚀  
 
 **Bem-vindo ao Jornada Nerd**, uma plataforma para nerds, geeks e entusiastas da tecnologia e cultura pop! Nosso objetivo é conectar pessoas que compartilham paixões por games, mangás, computadores e muito mais. Com serviços exclusivos de **aluguel de jogos e mangás** e **venda de peças para computadores**, você encontrará tudo o que precisa para mergulhar no universo nerd/geek em um só lugar!  

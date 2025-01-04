@@ -10,13 +10,17 @@ const ItemShop = ({ img, nomeProduto, valorProduto }) => {
   return (
     <div className="item-shop">
       <img src={img} alt={nomeProduto} className="item-shop-img" />
-      <div className="item-name">
+      <div className="item-info">
+         <div className="item-name">
         <h3>{nomeProduto}</h3>
         <FaHeart className="
         icon-heart" style={{ color: isFavorited ? "red" : "gray" }}  onClick={toggleFavorite}/>
       </div>
+        <p className="valor-item">{valorProduto}</p>
+      </div>
+     
       
-      <p>{valorProduto}</p>
+    
       <div className="add-carinho">
         <a href="" className="btn-carinho"> Adicionar ao carinho</a>
       </div>
