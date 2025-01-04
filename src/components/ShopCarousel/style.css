@@ -1,0 +1,14 @@
+.shop-carousel{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.arrow {
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+.items{
+    display: flex;
+    gap: 30px;
+}

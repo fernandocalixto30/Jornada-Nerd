@@ -1,0 +1,66 @@
+.item-shop {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 320px;
+    height: 312px;
+    flex-direction: column;
+    background-color: #adadad;
+}
+
+.item-shop-img {
+    width: 100%;
+}
+
+.item-shop-img>img {
+    width: 100%;
+}
+
+
+.valor-item {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    font-weight: 500;
+
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.item-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-heart {
+    font-size: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.btn-carinho {
+    padding: 10px;
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-carinho:hover{
+   color: #000;
+    border: 1px solid #000;
+    background: transparent;
+}
+.add-carinho{
+display: flex;
+justify-content: center;
+}
+
