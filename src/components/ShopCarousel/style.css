@@ -1,18 +1,51 @@
-.shop-carousel{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-.arrow {
-    font-size: 40px;
+.icon{
+  font-size: 35px;
     color: #fff;
-    cursor: pointer;
 }
-.items{
-    display: flex;
-    gap: 30px;
+.slider-container{
+  display: flex;
+  align-items: center; 
+   position: relative;
 }
-.carousel-content-shop{
-    display: flex;
-    align-items: center;
+
+
+ /* Estilos para as setas de navegação */
+/* 
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+
+/* Contêiner do carrossel */
+
+/* Estilo das setas */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%; /* Posiciona no meio verticalmente */
+  z-index: 10;
+  color: white;
+  font-size: 32px;
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  cursor: pointer;
+}
+
+
+.arrow-left{
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+.arrow-right{
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+.container-items-shop{
+  display: flex;
+  gap: 50px;
 }

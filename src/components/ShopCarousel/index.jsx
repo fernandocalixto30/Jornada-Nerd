@@ -1,9 +1,28 @@
-import { useState } from "react";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { useState, useEffect } from "react";
 import ItemShop from "../ItemShop/";
-import './style.css'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+
+import "./style.css"; // Estilos personalizados
 
 const ShopCarousel = () => {
+
+
+  function getSlidesPerView() {
+    const width = window.innerWidth;
+    if (width > 900) return 5;
+    if (width > 768) return 3;
+    return 1;
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const items = [
     { img: "https://images.stopgame.ru/news/2021/07/09/IHaHJTvlE.jpg", nome: "The Witcher 3 Wild Hunt", valor: "R$ 200,00" },
     { img: "https://images.stopgame.ru/news/2021/07/09/IHaHJTvlE.jpg", nome: "Cyberpunk 2077", valor: "R$ 250,00" },
@@ -12,26 +31,25 @@ const ShopCarousel = () => {
     { img: "https://images.stopgame.ru/news/2021/07/09/IHaHJTvlE.jpg", nome: "Red Dead", valor: "R$ 400,00" },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const next = () => setCurrentIndex((currentIndex + 1) % items.length);
-  const prev = () => setCurrentIndex((currentIndex - 1 + items.length) % items.length);
-
-  const visibleItems = items.slice(currentIndex, currentIndex + 5);
-
   return (
-    <div className="shop-carousel">
-      <IoIosArrowBack className="arrow" onClick={prev} />
-      <div className="items">
-        {visibleItems.map((item,index) => (
-          <ItemShop  key={index} img={item.img} nomeProduto={item.nome} valorProduto={item.valor} />
-          
+    <div className="slider-container">
+   <MdKeyboardArrowLeft className="arrow-left"/>
+   <div className="container-items-shop">
+       {items.map((item, index) => (
+       
+            <ItemShop 
+            key={index}
+              img={item.img}
+              nomeProduto={item.nome}
+              valorProduto={item.valor}
+            />
+
         ))}
-      </div>
-      
-      <IoIosArrowForward className="arrow" onClick={next} />
+   </div>
+     
+  <MdKeyboardArrowRight className="arrow-right"/>
     </div>
   );
 };
 
-export default ShopCarousel; 
+export default ShopCarousel;

@@ -6,8 +6,9 @@
     height: 312px;
     flex-direction: column;
     background-color: #adadad;
+    cursor: pointer;
+  
 }
-
 .item-shop-img {
     width: 100%;
 }
@@ -15,8 +16,12 @@
 .item-shop-img>img {
     width: 100%;
 }
-
-
+.nome-item{
+   font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    font-weight: 500;
+}
 .valor-item {
     font-size: 20px;
     font-family: "Roboto", sans-serif;
@@ -53,6 +58,7 @@
     color: #fff; 
     text-decoration: none;
     border-radius: 5px;
+    gap: 10px;
 }
 .btn-carinho:hover{
    color: #000;
