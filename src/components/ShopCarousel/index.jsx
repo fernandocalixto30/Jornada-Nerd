@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import {  useEffect } from "react";
 import ItemShop from "../ItemShop/";
-import { Swiper, SwiperSlide } from "swiper/react";
+
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 import "./style.css"; // Estilos personalizados
@@ -8,12 +8,6 @@ import "./style.css"; // Estilos personalizados
 const ShopCarousel = () => {
 
 
-  function getSlidesPerView() {
-    const width = window.innerWidth;
-    if (width > 900) return 5;
-    if (width > 768) return 3;
-    return 1;
-  }
 
   useEffect(() => {
     const handleResize = () => {
