@@ -1,0 +1,35 @@
+.footer-info {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  
+  .footer-info>h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #fff;
+  
+  }
+  
+  .footer-info>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .footer-info>ul>li {
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+  }
+  
+  .footer-info>ul>li>a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-info>ul>li>a:hover {
+  
+    color: #2e00fc;
+    text-decoration: underline;
+  }

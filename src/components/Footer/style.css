@@ -1,0 +1,28 @@
+.footer {
+    background-color: #0F0834;
+    color: #fff;
+    margin-top: 100px;
+  }
+  
+  .footer-info-container {
+  
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+  }
+  
+  
+  
+  .footer-copyright {
+    border-top: .1px solid #ddd;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .footer-copyright>p {
+    margin-top: 10px;
+    padding: 20px 0px 10px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+  }

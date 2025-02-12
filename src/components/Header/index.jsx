@@ -9,9 +9,9 @@ const Header = () => {
           </div>
           <nav className="menu">
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="#">Games</a></li>
-              <li><a href="#">Shop</a></li>
+              <li><a href="/shop">Shop</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Contact</a></li>
             </ul>

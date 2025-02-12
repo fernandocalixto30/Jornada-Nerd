@@ -5,7 +5,13 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 import "./style.css"; // Estilos personalizados
 
+
+
 const ShopCarousel = () => {
+
+
+
+
 
 
 
@@ -18,7 +24,7 @@ const ShopCarousel = () => {
   }, []);
 
   const items = [
-    { img: "https://images.stopgame.ru/news/2021/07/09/IHaHJTvlE.jpg", nome: "The Witcher 3 Wild Hunt", valor: "R$ 200,00" },
+    { img: "https://images.stopgame.ru/news/2021/07/09/IHaHJTvlE.jpg", nome: "cabare", valor: "R$ 200,00" },
     { img: "https://images.stopgame.ru/news/2021/07/09/IHaHJTvlE.jpg", nome: "Cyberpunk 2077", valor: "R$ 250,00" },
     { img: "https://images.stopgame.ru/news/2021/07/09/IHaHJTvlE.jpg", nome: "God of War", valor: "R$ 300,00" },
     { img: "https://images.stopgame.ru/news/2021/07/09/IHaHJTvlE.jpg", nome: "The Last", valor: "R$ 350,00" },
