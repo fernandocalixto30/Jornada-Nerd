@@ -2,7 +2,7 @@ import { FaHeart } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
-import "./Style.css";
+import "./style.css";
 
 const ItemShop = ({ img, nomeProduto, valorProduto }) => {
   const storageKey = "ItemShopStorage";
@@ -38,7 +38,7 @@ const ItemShop = ({ img, nomeProduto, valorProduto }) => {
     const novoItem = {
       id: itemArmazenado.length + 1, 
         NomeProduto: nomeProduto,
-        imagemProduto: image,
+        imagemProduto: img,
       ValorProduto: valorProduto,
     };
 
