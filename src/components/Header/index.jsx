@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './style.css'
 
 const Header = () => {
@@ -17,7 +18,7 @@ const Header = () => {
             </ul>
           </nav>
           <div className="bts">
-            <a className="btn-acesse" href="#">Join Our Clan</a>
+           <Link className="btn-acesse" href="#">Join Our Clan</Link>
           </div>
         </div>
       </header>
